@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", 'Times New Roman', Times,}
+    </style>
+  </head>
+<body class="w3-black w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-pink w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="images/Pink1.jpg" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>PORTFOLIO</b></h4>
+    <p class="w3-pink"></p>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-white"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+  </div>
+  <div class="w3-panel w3-large">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="https://www.w3schools.com/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>My Portfolio</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-16">
+      <span class="w3-margin-right">Filter:</span> 
+      <button class="w3-button w3-pink">ALL</button>
+      <button class="w3-button w3-pink"><i class="fa fa-diamond w3-margin-right"></i>About Me</button>
+      <button class="w3-button w3-pink w3-hide-small"><i class="fa fa-photo w3-margin-right">Services</i></button>
+      <button class="w3-button w3-pink w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>Contact</button>
+    </div>
+    </div>
+  </header>
+  
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/cross.jpg" alt="cross" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-black">
+        <p><b></b></p>
+        <p></p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/istockphotosoftware engineering women touching screen-1447085317-612x612.jpeg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-black">
+        <p><b></b></p>
+        <p></p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="images/istockphoto- software engineering  devops1338302761-612x612.jpeg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-black">
+        <p><b></b></p>
+        <p></p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/istockphoto-1177291696-612x612.jpg" alt="image" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-black">
+        <p><b></b></p>
+        <p></p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="images/istockphoto-964375828-612x612.jpg" alt="image" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-black">
+        <p><b></b></p>
+        <p></p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="images/istockphoto-therapistuse.jpg" alt="therapist" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-black">
+        <p><b</b></p>
+        <p></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+
+  <!-- Images of Me -->
+  <div class="w3-row-padding w3-padding-16" id="about">
+    <div class="w3-col m6">
+      <img src="images/Testimonial7.jpg" alt="Me" style="width:100%">
+    </div>
+    <div class="w3-col m6">
+      <img src="images/Testimonial1.jpg" alt="Me" style="width:100%">
+    </div>
+  </div>
+
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <h4><b>About Me</b></h4>
+    <p>Greetings, My name is Valencia Walker; I’m a Christian. I have an INTJ Personality. Im pursuing my MS in Psychology with a concentration in MS Psychology at Phoenix University. I will be graduating in December 2023. I intend to pursue my Ph.D. in Clinical Psychology; I have an educational background in Health Administration with a B.S From The University of Michigan-Flint obtained in 2018. An A.S. in Health Administration from Colorado Technical University. I'm also pursuing Software Engineering Bootcamp with Coding Temple full-time from April until June 2023.<p>
+              
+        I enjoy spending time with my family and loved ones. I enjoy learning, reading, researching, health, science, art, music, theatre, film, and video games.  I've previously worked as a Medicare Advocate as an Independent Contractor, I have former experience as a Research Clinical Coordinator. As well as a Survey Coordinator. I have experience as a certified Medicare Advocate.<p>
+              I want to become a Software Engineer to work from home remotely. Becoming a Software engineer, I can create either applications software, systems software, or both. I've been interested in Engineering since I was an undergrad. I want to design and build things. I want to learn about Software Engineering and apply these benchmarks to Software Engineering. As a software Engineer, I can assemble and test and preserve products.
+            My email is ValenciaWalker37@yahoo.com, Linkedin Resume: <a href="https://www.linkedin.com/in/valencia-walker-306a7477/"target="_blank">Visit My Linkedin!</a>
+            In working remotely with my colleagues to write or assess code. As a software engineer, I can create from anything, such as a critical network infrastructure or video game. I want to evaluate present software systems, having a hand in designing software or app-founded resolutions which could assist clients with their needs. I want to develop app software related to applied psychological research for my future clients regarding treatment and interventions.</p>
+      <hr>
+       
+    
+    <h4>Technical Skills</h4>
+    <!-- Progress bars / Skills -->
+    <p>HTML,CSS</p>
+    <div class="w3-pink">
+      <div class="w3-container w3-pink w3-padding w3-center" style="width:95%">95%</div>
+    </div>
+    <p>Python,Databases,Flask</p>
+    <div class="w3-black">
+      <div class="w3-container w3-pink w3-padding w3-center" style="width:85%">85%</div>
+    </div>
+    <p>Javascript, React,Javascript, Node JS, Express</p>
+    <div class="w3-black">
+      <div class="w3-container w3-pink w3-padding w3-center" style="width:80%">80%</div>
+    </div>
+    <p>
+      <button class="w3-button w3-pink w3-padding-large w3-margin-top w3-margin-bottom">
+        <i class="fa fa-download w3-margin-right"></i>Download Resume
+      </button>
+    </p>
+    <hr>
+    
+    <h4>How much I charge Pricing</h4>
+    <!-- Pricing Tables -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-border w3-pink w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
+          <li class="w3-padding-16">HTML,CSS</li>
+          <li class="w3-padding-16">Python,Databases,Flask</li>
+          <li class="w3-padding-16">Javascript,React, Javascript, Node JS, Express</li>
+          <li class="w3-padding-16">Technical Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 50</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-black w3-padding-24">
+            <button class="w3-button w3-pink w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-border w3-pink w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-black w3-xlarge w3-padding-32">Pro</li>
+          <li class="w3-padding-16">HTML,CSS</li>
+          <li class="w3-padding-16">Python, Databases,Flask</li>
+          <li class="w3-padding-16">Javascript,React, Javascript,Node JS, Express</li>
+          <li class="w3-padding-16">Endless Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 100</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-black w3-padding-24">
+            <button class="w3-button w3-pink w3-padding-large w3-hover-pink">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="w3-third">
+        <ul class="w3-ul w3-border w3-pink w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-black w3-xlarge w3-padding-32">Premium</li>
+          <li class="w3-padding-16">HTML,CSS</li>
+          <li class="w3-padding-16">Python, Databases,Flask</li>
+          <li class="w3-padding-16">Javascript, React, Javascript, Node JS, Express</li>
+          <li class="w3-padding-16">Endless Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 200</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-black w3-padding-24">
+            <button class="w3-button w3-pink w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-large w3-white">
+    <h4 id="contact"><b>Contact Me</b></h4>
+    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+      <div class="w3-third w3-black">
+        <p><i class="fa fa-envelope w3-xxlarge w3-text-pink"></i></p>
+        <p>ValenciaWalker37@.com</p>
+      </div>
+      <div class="w3-third w3-black">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-pink"></i></p>
+        <p>Michigan, US</p>
+      </div>
+      <div class="w3-third w3-black">
+        <p><i class="fa fa-phone w3-xxlarge w3-text-pink"></i></p>
+        <p>8103482944</p>
+      </div>
+    </div>
+    <hr class="w3-opacity">
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-black">
+  <div class="w3-row-padding">
+    <div class="w3-third">
+      <h3></h3>
+      <p><a href="" target="_blank">
+    </div>
+  
+    <div class="w3-third">
+      <h3>My Social's</h3>
+      <h4><b></b></h4><h4>
+        <hr>
+          <a href="https://github.com/ValenciaW9"/"target_blank">Visit My GitHub</a>
+          <a href="https://www.linkedin.com/in/valencia-walker-306a7477/"target="_blank">Visit My Linkedin!</a>
+          <a href="https://profile.indeed.com/?hl=en_US&co=US&from=gnav-indapply-SmartApply&_ga=2.240031937.377269897.1681491381-830974499.1681491381target/="target_blank">Visit My Indeed!</a>
+          <a href=" https://us05web.zoom.us/j/8965903895?pwd=dVdKaFYwaS8xeUNpRU1DY3hnQkRhQT09/"target="_blank>Visit My Zoom!</a
+          <a href="www.https://www.facebook.com/ValenciaHollywood/"target="_blank">Visit My Facebook!</a>      
+          <a href="www.https://www.instagram.com/valenciadw90/"target="_blank">Visit My instagram!</a>
+          <a href="www. https://www.snapchat.com/add/valenciawalker9?share_id=43Zz+XHBTDOgbXt3IPVGdQ&locale=en_US&sid=2b3b5a87b5d94344ad56987b21ce5cdb/"target="_blank">Visit My snapchat!</a>
+          <a href="https://www.pinterest.com/valenciaw90/"target="_blank">Visit My Pininterest!</a
+          <a href="www.https://www.youtube.com/channel/UCU1O-NLyxnEF6_wgyxHRI9w"target="_blank>Visit My youtube!</a>
+          <a href="https://www.tiktok.com/@valenciawalker65"target="_blank>Visit My Tiktok!</a>
+          <a href="https://www.tumblr.com/cocomonetxos/"target="_blank>Visit My Tumblr!</a>
+
+
+         
